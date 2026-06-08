@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IA en educación e investigación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Styles.css?v=2.4">
+  </head>
+
+  <body>
+
+    <!-- Navegación -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark ia-navbar sticky-top">
+      <div class="container-xl d-flex justify-content-between align-items-center">
+
+        <!--Logo-->
+
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="Recursos/Logo.png" alt="Logo" height="40">
+        </a>
+
+        <!--Menú-->
+
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav ms-auto gap-3 align-items-center">
+
+
+            <li class="nav-item">
+              <a class="nav-link ia-nav-link active" href="#divulgacion">Divulgación</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link ia-nav-link" href="#cursos">Cursos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link ia-nav-link" href="#podcast">Podcast</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link ia-nav-link" href="#conferencias">Conferencias</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <!--Botones-->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </div>
+   </nav>
+      
+    <!-- Banner -->
+
+      <img src="Recursos/Banner.png" class="d-block w-100" alt="...">
+
+   <!-- Introducción -->
+    <section class="container py-5">
+      <div class="text-center mb-5">
+        <h1>Introducción</h1>
+      </div>
+      <p class="mb-5" style="text-align: justify;">
+        En los últimos años, la Inteligencia Artificial se ha convertido en una de las tecnologías más influyentes
+        dentro de distintos ámbitos de la sociedad, especialmente en el área educativa. Su incorporación en herramientas digitales,
+        plataformas de aprendizaje y sistemas de información ha transformado la manera en que estudiantes y docentes acceden al conocimiento,
+        desarrollan habilidades y realizan actividades académicas.
+      </p>
+
+      <!--carrosel-->
+
+      <div class="row gy-4 d-flex align-items-stretch">
+        <div class="col-lg-6">
+          <div id="secondaryCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 500px;">
+            <div class="carousel-inner rounded shadow-sm h-100">
+              <div class="carousel-item active">
+                <img src="Recursos/Estudiante_IA.png" class="d-block w-100 h-100 object-fit-cover" alt="IA para estudiantes">
+              </div>
+              <div class="carousel-item">
+                <img src="Recursos/Docente_IA.png" class="d-block w-100 h-100 object-fit-cover" alt="IA para docentes">
+              </div>
+              <div class="carousel-item">
+                <img src="Recursos/Aula_IA.png" class="d-block w-100 h-100 object-fit-cover" alt="IA para aulas">
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+       <!--Mision/Visión-->
+
+        <div class="col-lg-6 d-flex flex-column gap-3">
+
+          <!-- Misión -->
+          <div class="mision-section d-flex gap-3 align-items-start">
+            <div class="mv-icon-wrap mv-icon-purple flex-shrink-0">
+              <i class="bi bi-bullseye"></i>
+            </div>
+            <div>
+              <h2 class="mv-title mv-title-purple">Misión</h2>
+              <p class="mv-text" style="text-align: justify;">
+                Nuestra misión es proporcionar a estudiantes y docentes recursos, herramientas y conocimientos sobre el uso de la Inteligencia Artificial
+                en el ámbito educativo. Buscamos fomentar la innovación, mejorar la calidad de la enseñanza y el aprendizaje, y promover un uso ético y responsable
+                de la tecnología para potenciar el desarrollo académico y profesional de nuestra comunidad educativa.
+              </p>
+            </div>
+          </div>
+
+          <!-- Visión -->
+          <div class="vision-section d-flex gap-3 align-items-start">
+            <div class="mv-icon-wrap mv-icon-cyan flex-shrink-0">
+              <i class="bi bi-eye"></i>
+            </div>
+            <div>
+              <h2 class="mv-title mv-title-cyan">Visión</h2>
+              <p class="mv-text" style="text-align: justify;">
+                Nuestra visión es ser líderes en la integración de la Inteligencia Artificial en la educación, promoviendo un entorno académico innovador y responsable
+                que prepare a los estudiantes para los desafíos del futuro.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Secciones del menú -->
+
+    <!--Publicaciones-->
+    <section id="divulgacion" class="py-5 bg-cream">
+      <div class="container-xl">
+        <div class="text-center mb-4">
+          <span class="badge ia-tag-warm mb-2">Contenido académico</span>
+          <h2 class="fw-medium text-dark-warm">Divulgación científica</h2>
+          <p class="text-muted">Artículos, libros y recursos para acercar la IA a la comunidad académica</p>
+        </div>
+        <div class="list-group">
+          <a href="https://zenodo.org/records/18007609" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action shadow-sm mb-2">
+            <div class="d-flex gap-3">
+              <div class="divul-icon icon-purple flex-shrink-0">📖</div>
+              <div class="w-100">
+                <small class="text-muted d-block mb-1">Libro </small>
+                <h6 class="fw-medium mb-1">Uso, regulación y retos de la Inteligencia Artificial en la Educación Superior</h6>
+                <p class="text-muted small mb-2">Editores: Carlos Arturo Torres Gastelú, Patricia Lagunes Domínguez, Agustín Lagunes Domínguez. </p>
+                <span class="ia-link-tag">→ Leer libro</span>
+              </div>
+            </div>
+          </a>
+ 
+          <a href="https://unesdoc.unesco.org/ark:/48223/pf0000393812" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action shadow-sm mb-2">
+            <div class="d-flex gap-3">
+              <div class="divul-icon icon-blue flex-shrink-0">📖</div>
+              <div class="w-100">
+                <small class="text-muted d-block mb-1">Libro </small>
+                <h6 class="fw-medium mb-1">Marco de competencias para estudiantes en materia de IA</h6>
+                <p class="text-muted small mb-2">UNESCO</p>
+                <span class="ia-link-tag">→ Leer libro</span>
+              </div>
+            </div>
+          </a>
+ 
+          <a href="https://unifranz.edu.bo/wp-content/uploads/2025/05/INFOGRAFIA-BLOG-HERRAMIENTAS-IA-PARA-INVESTIGACION.png" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action shadow-sm mb-2">
+            <div class="d-flex gap-3">
+              <div class="divul-icon icon-green flex-shrink-0">📊</div>
+              <div class="w-100">
+                <small class="text-muted d-block mb-1">Infografía </small>
+                <h6 class="fw-medium mb-1">16 Herramientas de IA para Investigación Académica</h6>
+                <p class="text-muted small mb-2">Por: Manuel Joao Filameno Nuñez.</p>
+                <span class="ia-link-tag">→ Ver infografía</span>
+              </div>
+            </div>
+          </a>
+ 
+          <a href="https://www.researchgate.net/publication/386342331" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action shadow-sm mb-2">
+            <div class="d-flex gap-3">
+              <div class="divul-icon icon-green flex-shrink-0">📑</div>
+              <div class="w-100">
+                <small class="text-muted d-block mb-1">Reporte </small>
+                <h6 class="fw-medium mb-1">Reporte sobre el uso de Inteligencia Artificial en el trabajo de investigación</h6>
+                <p class="text-muted small mb-2">Elaborado por: Agustín Lagunes Domínguez.</p>
+                <span class="ia-link-tag">→ Leer reporte</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--Cursos-->
+
+    <section id="cursos" class="py-5 bg-warm-white">
+      <div class="container-xl">
+        <div class="text-center mb-4">
+          <span class="badge ia-tag-warm mb-2">Formación académica</span>
+          <h2 class="fw-medium text-dark-warm">Cursos especializados</h2>
+          <p class="text-muted">Aprende IA con enfoque en educación e investigación científica</p>
+        </div>
+      <div class="row g-4">
+ 
+        <!-- Curso 1 -->
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="card ia-card h-100 border-0 cursor-pointer" data-curso-id="introduccion-ia-docentes" style="cursor: pointer;">
+            <div class="curso-banner banner-purple">
+              <span class="curso-price">Gratuito</span>
+              <div class="curso-dot dot-green"></div>
+              <span class="curso-chip">Fundamentos</span>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title fw-medium">Introducción a la IA para docentes</h6>
+              <p class="card-text text-muted small">Principios fundamentales de la IA y cómo integrarla en el aula de forma práctica y ética.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="badge ia-level-badge">Básico</span>
+                <small class="text-muted">24 hrs</small>
+              </div>
+              <button type="button" class="btn btn-primary w-100 mt-4 btn-inscribirse" data-course="Introducción a la IA para docentes" data-price="0">Inscribirse</button>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Curso 2 -->
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="card ia-card h-100 border-0 cursor-pointer" data-curso-id="machine-learning-ciencias" style="cursor: pointer;">
+            <div class="curso-banner banner-blue">
+              <span class="curso-price">$1500</span>
+              <div class="curso-dot dot-orange"></div>
+              <span class="curso-chip">Investigación</span>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title fw-medium">Machine Learning en ciencias</h6>
+              <p class="card-text text-muted small">Modelos predictivos y análisis de datos para proyectos de investigación académica y científica.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="badge ia-level-badge">Intermedio</span>
+                <small class="text-muted">48 hrs</small>
+              </div>
+              <button type="button" class="btn btn-primary w-100 mt-4 btn-inscribirse" data-course="Machine Learning en ciencias" data-price="1500">Inscribirse</button>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Curso 3 -->
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="card ia-card h-100 border-0 cursor-pointer" data-curso-id="procesamiento-lenguaje-natural" style="cursor: pointer;">
+            <div class="curso-banner banner-green">
+              <span class="curso-price">$2000</span>
+              <div class="curso-dot dot-blue"></div>
+              <span class="curso-chip">Avanzado</span>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title fw-medium">Procesamiento de lenguaje natural</h6>
+              <p class="card-text text-muted small">Técnicas de NLP para análisis de textos académicos, revisión de literatura y generación de contenido.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="badge ia-level-badge">Avanzado</span>
+                <small class="text-muted">60 hrs</small>
+              </div>
+              <button type="button" class="btn btn-primary w-100 mt-4 btn-inscribirse" data-course="Procesamiento de lenguaje natural" data-price="2000">Inscribirse</button>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Curso 4 -->
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="card ia-card h-100 border-0 cursor-pointer" data-curso-id="etica-ia-educacion" style="cursor: pointer;">
+            <div class="curso-banner banner-mixed">
+              <span class="curso-price">Gratuito</span>
+              <div class="curso-dot dot-green"></div>
+              <span class="curso-chip">Ética IA</span>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title fw-medium">Ética e IA responsable en educación</h6>
+              <p class="card-text text-muted small">Implicaciones éticas del uso de IA en contextos educativos, sesgo algorítmico y regulación.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="badge ia-level-badge">Todos</span>
+                <small class="text-muted">18 hrs</small>
+              </div>
+              <button type="button" class="btn btn-primary w-100 mt-4 btn-inscribirse" data-course="Ética e IA responsable en educación" data-price="0">Inscribirse</button>
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+    </section>
+
+    <!--Podcast-->
+    <section id="podcast" class="py-5 bg-light">
+      <div class="container-xl">
+        <div class="text-center mb-4">
+          <span class="badge ia-tag-warm mb-2">Video · Episodios y Debates</span>
+          <h2 class="fw-medium text-dark-warm">Podcast</h2>
+          <p class="text-muted">Conversaciones con investigadores, docentes y expertos en tecnología educativa</p>
+        </div>
+        <div class="list-group">
+          <a href="https://youtu.be/ijsrWdObnU0?si=lhzn64n9DIzGZ03E" target="_blank" rel="noopener noreferrer" class="list-group-item shadow-sm mb-2" style="text-decoration: none; color: inherit;">
+            <div class="d-flex gap-3 align-items-start">
+              <div class="flex-shrink-0">
+                <button type="button" class="btn btn-sm btn-primary rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+              <div class="flex-grow-1 min-w-0">
+                <small class="text-muted d-block mb-1">Ep. 1 · 15 marzo 2024</small>
+                <h6 class="fw-medium mb-1">Deep Talks: Inteligencia Artificial. Educación y Futuro</h6>
+                <p class="text-muted small mb-0">38 min · con Planeta Formación y Universidades</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://youtu.be/18QBF0LifbY?si=sogsHtZaVv_5JR6u" target="_blank" rel="noopener noreferrer" class="list-group-item shadow-sm mb-2" style="text-decoration: none; color: inherit;">
+            <div class="d-flex gap-3 align-items-start">
+              <div class="flex-shrink-0">
+                <button type="button" class="btn btn-sm btn-primary rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+              <div class="flex-grow-1 min-w-0">
+                <small class="text-muted d-block mb-1">Ep. 5 · 7 oct 2020</small>
+                <h6 class="fw-medium mb-1">Las claves educativas en la era de la inteligencia artificial</h6>
+                <p class="text-muted small mb-0">58 min · con Kai-Fu Lee</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://youtu.be/MZhKDt86PX8?si=y2V00V5-LdbYNt0Q" target="_blank" rel="noopener noreferrer" class="list-group-item shadow-sm mb-2" style="text-decoration: none; color: inherit;">
+            <div class="d-flex gap-3 align-items-start">
+              <div class="flex-shrink-0">
+                <button type="button" class="btn btn-sm btn-primary rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+              <div class="flex-grow-1 min-w-0">
+                <small class="text-muted d-block mb-1">Ep. 1 · 27 nov 2023</small>
+                <h6 class="fw-medium mb-1">IA en educación: Del miedo a la oportunidad</h6>
+                <p class="text-muted small mb-0">18 min · con María Agustina Ibañez</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://youtu.be/Isi3h8dQ7Kw?si=gBDVBCH9J5ZVXjW1" target="_blank" rel="noopener noreferrer" class="list-group-item shadow-sm mb-2" style="text-decoration: none; color: inherit;">
+            <div class="d-flex gap-3 align-items-start">
+              <div class="flex-shrink-0">
+                <button type="button" class="btn btn-sm btn-primary rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+              <div class="flex-grow-1 min-w-0">
+                <small class="text-muted d-block mb-1">Ep. 1 · 11 sep 2025</small>
+                <h6 class="fw-medium mb-1">Desafíos de la IA en la educación</h6>
+                <p class="text-muted small mb-0">31 min · con Milenio</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Conferencias -->
+
+    <section id="conferencias" class="py-5 bg-warm-white">
+      <div class="container-xl">
+        <div class="text-center mb-4">
+          <span class="badge ia-tag-warm mb-2">Eventos académicos</span>
+          <h2 class="fw-medium text-dark-warm">Conferencias y seminarios</h2>
+          <p class="text-muted">Próximos eventos y grabaciones de conferencias especializadas en IA educativa</p>
+        </div>
+      </div>
+      <div class="row g-4 justify-content-center">
+ 
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card ia-card overflow-hidden h-100 border-0">
+            <div class="conf-head d-flex justify-content-between align-items-start p-3">
+              <div class="conf-date-box text-center">
+                <div class="conf-day">18</div>
+                <div class="conf-month">Junio 2026</div>
+              </div>
+              <span class="conf-mode-badge">En línea</span>
+            </div>
+            <div class="card-body">
+              <h6 class="fw-medium">Personalización del aprendizaje con IA adaptativa</h6>
+              <p class="text-muted small">Dra. Sofía Ramos · CINVESTAV</p>
+              <div class="d-flex flex-wrap gap-1">
+                <span class="badge ia-conf-tag">Aprendizaje</span>
+                <span class="badge ia-conf-tag">Adaptación</span>
+                <span class="badge ia-conf-tag">Básica</span>
+                <price class="badge ia-conf-tag">Gratuita</price>
+              </div>
+            </div>
+            <button class="btn btn-conf-register btn-inscribirse w-100 rounded-0" data-course="Personalización del aprendizaje con IA adaptativa" data-price="0">
+              Inscribirse →
+            </button>
+          </div>
+        </div>
+ 
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card ia-card overflow-hidden h-100 border-0">
+            <div class="conf-head d-flex justify-content-between align-items-start p-3">
+              <div class="conf-date-box text-center">
+                <div class="conf-day">10</div>
+                <div class="conf-month">Junio 2026</div>
+              </div>
+              <span class="conf-mode-badge">Presencial</span>
+            </div>
+            <div class="card-body">
+              <h6 class="fw-medium">IA generativa y propiedad intelectual en investigación</h6>
+              <p class="text-muted small">Dr. Pablo Salas · UNAM</p>
+              <div class="d-flex flex-wrap gap-1">
+                <span class="badge ia-conf-tag">Derechos</span>
+                <span class="badge ia-conf-tag">Ética</span>
+                <span class="badge ia-conf-tag">CDMX</span>
+                <price class="badge ia-conf-tag">$500</price>
+              </div>
+            </div>
+            <button class="btn btn-conf-register btn-inscribirse w-100 rounded-0" data-course="IA generativa y propiedad intelectual" data-price="500">
+              Inscribirse →
+            </button>
+          </div>
+        </div>
+ 
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card ia-card overflow-hidden h-100 border-0">
+            <div class="conf-head d-flex justify-content-between align-items-start p-3">
+              <div class="conf-date-box text-center">
+                <div class="conf-day">09</div>
+                <div class="conf-month">Mayo 2026</div>
+              </div>
+              <span class="conf-mode-badge">Híbrido</span>
+            </div>
+            <div class="card-body">
+              <h6 class="fw-medium">Simposio: IA en educación superior latinoamericana</h6>
+              <p class="text-muted small">Múltiples ponentes · Red CLEI</p>
+              <div class="d-flex flex-wrap gap-1">
+                <span class="badge ia-conf-tag">Simposio</span>
+                <span class="badge ia-conf-tag">LATAM</span>
+                <span class="badge ia-conf-tag">2 días</span>
+                <price class="badge ia-conf-tag">$300</price>
+              </div>
+            </div>
+            <button class="btn btn-conf-register btn-inscribirse w-100 rounded-0" data-course="Simposio IA educación superior" data-price="300">
+              Inscribirse →
+            </button>
+          </div>
+        </div>
+ 
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="navbar navbar-expand-lg navbar-dark ia-navbar">
+      <div class="container-x1 w-100 d-flex justify-content-center align-items-center gap-4 flex-column flex-md-row text-center">
+        <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
+          <img src="Recursos/Logo.png" height="40" class="d-inline-block align-text-top" alt="Logo IAWorld">
+        </a>
+        <div>
+          <ul class="navbar-nav gap-3 d-flex flex-column flex-md-row align-items-center justify-content-center mb-0">
+            <li class="nav-item">
+              <a class="nav-link ia-nav-link text-white" href="https://www.facebook.com/IAWorld.z6l" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-facebook me-2"></i>Facebook: IA: Educación & Investigación 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ia-nav-link text-white" href="https://www.instagram.com/iaworld.z6l/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram me-2"></i>Instagram: @iaworld.z6l
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ia-nav-link text-white" href="https://www.youtube.com/@IAWorld-z6l" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-youtube me-2"></i>YouTube: IAWorld
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="bg-dark text-white text-center py-2">
+      <p class="mb-0">&copy; 2026 IA World. Todos los derechos reservados.</p>
+    </div>
+
+    <!-- Contacto -->
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contacto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="https://formspree.io/f/xvzypbdb" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre Completo:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <!-- Botón flotante para contacto -->
+    <button type="button" class="btn btn-primary position-fixed bottom-0 end-0 m-3" data-bs-toggle="modal" data-bs-target="#contactModal" style="z-index: 1050;">
+      <i class="bi bi-chat-dots-fill"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js?v=1.2"></script>
+  </body>
+</html>
